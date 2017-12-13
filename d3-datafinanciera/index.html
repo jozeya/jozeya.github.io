@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  
+</head>
+<style>
+
+.chart {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 11px;
+  float: left;
+}
+
+div {
+  border-top: 0px solid red;
+  border-right: 0px solid red;
+  border-bottom: 0px solid red;
+  border-left: 0px solid red;
+}
+
+rect {
+  stroke: #eee;
+  fill: #aaa;
+  fill-opacity: .8;
+}
+
+rect.parent {
+  cursor: pointer;
+  fill: steelblue;
+}
+
+text {
+  pointer-events: none;
+}
+
+.item {
+            border: 2px solid white;
+            background-color: skyblue;
+            opacity: 0.8;
+            overflow: visible;
+            padding: 6px 0;
+            white-space: nowrap;
+        }
+
+.container,
+.list-container {
+  float: left;
+}
+
+.list-container {
+    padding-top: 50px;
+    font-size: 10px;
+}
+
+.state {
+  font-weight: bold;
+font-size: 1.2em;
+}
+
+.chart_container rect {
+  fill: steelblue;
+}
+
+.char_container text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.chart_container {
+  
+  margin-left: 300px;
+  font-size: 11px;
+}
+
+</style>
+
+<body>
+<center><h4>Visualizacion de datos Financieros</h4></center>
+<div id="body"></div>
+<div id="test"></div>
+
+</body>
+<script src="d3.v3.min.js"></script>
+<script src="component-utils.js"></script>
+<script src="tooltip-component.js"></script>
+<script src="radviz-component.js"></script>
+<!-- <script src="../radviz-min.js"></script> -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script>
+	var w = 1120,
+    	h = 600,
+    	x = d3.scale.linear().range([0, w]),
+    	y = d3.scale.linear().range([0, h]);
+
+  var dw = 1120,
+      dh = 600;
+
+  var if_resize = 0;
+  var if_radviz = 0;
+  var anio = 0;
+  var mes = "";
+
+    var color = d3.scale.category20c();
+
+    var vis = d3.select("#body").append("div")
+    			.attr("class", "chart")
+    			.style("width", w + "px")
+    			.style("height", h + "px")
+
+    
+    var radviz = radvizComponent();
+
+    var container = d3.select("#body").append("div")
+            .attr("class", "container");        
+    
+    var vis_container = d3.select("#body")
+                          .append("div")
+                            .attr("class", "list-container");
+
+    var state = vis_container.append("div")
+                  .attr("class", "state");
+
+    var list = vis_container.append("div")
+                  .attr("class", "list");
+
+    var container2 = d3.select("#body").append("div")
+            .attr("class", "chart_container");
+
+    var svg = vis
+  				.append("svg")
+    			.attr("width", w)
+    			.attr("height", h);   
+
+    var p = d3.select("#test").append("svg")
+		    .attr("width", 300)
+		    .attr("height", 50)
+		    .append("text")
+				.attr("x", 10)
+				.attr("y", 20)
+				.attr("height", 100)
+		    	.attr("width", 50)
+		    	.text("ruta ...");			
+
+    var partition = d3.layout.partition()
+    	.value(function(d) { return d.size; });
+
+    data = [];
+
+    var MyString = "";
+    var str = "";
+    var producto = "";
+
+    d3.json("data3.json", function(root) {
+        
+    	var g = svg.selectAll("g")
+      			.data(partition.nodes(root))
+    			  .enter().append("g")
+      			.attr("transform", function(d) { return "translate(" + x(d.y) + "," + y(d.x) + ")"; })
+      			.on("click", click);
+
+      	var kx = w / root.dx,
+      		ky = h / 1;
+
+  		g.append("rect")
+      		.attr("width", root.dy * kx)
+      		.attr("height", function(d) { return d.dx * ky; })
+      		.attr("class", function(d) { return d.children ? "parent" : "child"; })
+      		.attr("id", function(d) { return d.name; })
+
+      g.append("text")
+     	 	.attr("transform", transform)
+      		.attr("dy", ".35em")
+      		.style("opacity", function(d) { return d.dx * ky > 12 ? 1 : 0; })
+      		.text(function(d) { return d.name; });
+
+      function click(d) {
+        MyString = "";
+        descrip = "";
+		      if (!d.children) {
+            if (d.name == "PlazoFijo"){
+              data.push("Cdp");
+              producto = "Cdp";
+            }else{
+		    		  data.push(d.name);
+              producto = d.name;
+            }
+
+            for (var i = data.length - 1; i >= 0; i--) {
+              MyString += data[i];
+              descrip += data[i] + " ";
+            };
+
+            anio = data[0];
+
+            MyString += ".csv";
+            str = MyString;
+
+		    		d3.select("#test").select("text")
+		    			.text(function (d) { return "-" + descrip + "-" });
+
+		    		data=[];
+
+            w = 1120/2;
+            h = 600;
+
+            x = d3.scale.linear().range([0, w]);
+            y = d3.scale.linear().range([0, h]);
+
+
+            d3.select("#body").select("div")
+              .style("width", w + "px")
+              .style("height", h + "px");
+
+            d3.select("#body").selectAll("svg")
+              .attr("width", w)
+              .attr("height", h);
+
+            click(root);
+            if_resize = 1;
+
+            showRadYear();
+            
+		    	  return;
+		      }
+
+        if (if_resize != 0){
+            w = 1120;
+            h = 600;
+
+            x = d3.scale.linear().range([0, w]);
+            y = d3.scale.linear().range([0, h]);
+
+
+            d3.select("#body").select("div")
+              .style("width", w + "px")
+              .style("height", h + "px");
+
+            d3.select("#body").selectAll("svg")
+              .attr("width", w)
+              .attr("height", h);          
+
+            if_resize = 0;
+            hideRadYear();
+            
+        }
+
+		    kx = (d.y ? w - 40 : w) / (1 - d.y);
+		    ky = h / d.dx;
+		    x.domain([d.y, 1]).range([d.y ? 40 : 0, w]);
+		    y.domain([d.x, d.x + d.dx]);
+
+		    var t = g.transition()
+		        .duration(d3.event.altKey ? 7500 : 750)
+		        .attr("transform", function(d) { return "translate(" + x(d.y) + "," + y(d.x) + ")"; });
+
+		    t.select("rect")
+		        .attr("width", d.dy * kx)
+		        .attr("height", function(d) { return d.dx * ky; });
+
+		    t.select("text")
+		        .attr("transform", transform)
+		        .style("opacity", function(d) { return d.dx * ky > 12 ? 1 : 0; })
+
+        
+
+		    if (d.name != "Ingresos" && d.name != "Sucursal 1"){
+		    	if (find(data,d.name))
+            switch(d.name){
+              case "Enero":
+                data.push(1);
+                break;
+              case "Febrero":
+                data.push(2);
+                break;
+              case "Marzo":
+                data.push(3);
+                break;
+              case "Abril":
+                data.push(4);
+                break;
+              case "Mayo":
+                data.push(5);
+                break;
+              case "Junio":
+                data.push(6);
+                break;
+              case "Julio":
+                data.push(7);
+                break;
+              case "Agosto":
+                data.push(8);
+                break;
+              case "Setiembre":
+                data.push(9);
+                break;
+              case "Octubre":
+                data.push(10);
+                break;
+              case "Noviembre":
+                data.push(11);
+                break;
+              case "Diciembre":
+                data.push(12);
+                break;
+              default:
+                data.push(d.name);  
+            }
+		    }
+
+
+
+		    d3.event.stopPropagation();
+    				
+		}
+
+		function transform(d) {
+   			return "translate(8," + d.dx * ky / 2 + ")";
+  		}	
+
+  		function find(source, id) {
+  			for (var i = 0; i < source.length; i++) {
+    			if (source[i] == id) {
+      				return false;
+    			}
+  			}
+  			return true;
+		}
+
+    function hideRadYear(d){
+        d3.select(".container").selectAll("svg").remove();
+        d3.select(".container").selectAll("div").remove();
+        d3.select(".list-container").select(".list").selectAll("div").remove();
+        d3.select(".list-container").select(".state").text("");
+    }
+
+    function showRadYear(d){
+        var dimensions
+        switch (producto){
+          case 'Prestamos':
+            dimensions = ['NO REVOLVENTE MN','MICROEMPRESA MN','PEQUENIA EMPRESA MN',
+                      'HIPOTECARIO MN','JUDICIAL MN', 'REFINANCIADO MN', 'CASTIGADO MN', 'NO REVOLVENTE ME',
+                      'MICROEMPRESA ME', 'HIPOTECARIO ME', 'JUDICIAL ME', 'REFINANCIADO ME', 'CASTIGADO ME'];
+
+            str = "csv_files/anio/Prestamos/Pagares_general_" + anio + ".csv";
+            break;
+
+          case 'Ahorros':
+            dimensions = ['Ahorro MN', 'Ahorro ME', 'Ahorro 0 MN', 'Ahorro 0 ME', 'CTS MN', 'Techo Propio MN'];
+            str = "csv_files/anio/Ahorros/Ahorros_general_" + anio + ".csv";
+            break;
+
+          case 'Cdp':
+            dimensions = ['3 Meses MN', '6 Meses MN', '9 Meses MN','12 Meses MN',
+                          '>12 Meses MN','3 Meses ME', '6 Meses ME', '9 Meses ME','12 Meses ME',
+                          '>12 Meses ME'];
+            str = "csv_files/anio/Cdp/CDP_general_" + anio + ".csv";
+            break;
+
+          case 'Aportes':
+            dimensions = ['RAZON SOCIAL', 'MASCULINO', 'FEMENINO'];
+            str = "csv_files/anio/Aportes/Aportes_general_" + anio + ".csv";
+            break;
+        }
+
+        radviz = radviz 
+            .config({
+                el: document.querySelector('.container'),
+                size: 400,
+                margin: 100,
+                zoomFactor: 1,
+                dotRadius: 6,
+                drawLinks: false,
+                useRepulsion:true,
+                colorAccessor: function(d) {
+                    return d['Anio'];
+                },
+                dimensions: dimensions,
+                useTooltip: false
+            })
+            .on('panelEnter', function() {
+                console.log('panelEnter');
+            })
+            .on('panelLeave', function() {
+                console.log('panelLeave');
+            })
+            .on('dotEnter', function(d) {
+                console.log('dotEnter', d);
+                renderList(d);
+                showBarChart(d);
+            })
+            .on('dotLeave', function(d) {
+                console.log('dotLeave', d);
+                hide_barchart();
+            });
+
+        var renderList = function(datum) {
+            d3.select('.state').text(datum.Mes);
+
+            var list = d3.select('.list')
+                .selectAll('div.item')
+                .data(dimensions);
+
+            list.enter().append('div').classed('item', true);
+
+            list.transition().style({
+                    width: function(d) {
+                        return datum[d] / 10000 + 'px';
+                    }
+                })
+                .text(function(d) {
+                    return d + ': ' + d3.format(',')(datum[d]);
+                });
+            list.exit().remove();
+        }
+        
+        function hide_barchart(d){
+          d3.select(".chart_container").selectAll("svg").remove();
+          d3.select(".chart_container").selectAll("div").remove();  
+        }
+
+        function showBarChart(d){
+          var cad = d.Mes;
+
+          var fcad = cad.substring(cad.length-4,cad.length);
+          var icad = cad.substring(0,cad.length-4);
+          var _mes = "";
+          var _str = "";
+          
+          switch(icad){
+            case 'Enero':
+              _mes = 1;
+              break;
+            case 'Febrero':
+              _mes = 2;
+              break;
+            case 'Marzo':
+              _mes = 3;
+              break;
+            case 'Abril':
+              _mes = 4;
+              break;
+            case 'Mayo':
+              _mes = 5;
+              break;
+            case 'Junio':
+              _mes = 6;
+              break;
+            case 'Julio':
+              _mes = 7;
+              break;
+            case 'Agosto':
+              _mes = 8;
+              break;
+            case 'Setiembre':
+              _mes = 9;
+              break;
+            case 'Octubre':
+              _mes = 10;
+              break;
+            case 'Noviembre':
+              _mes = 11;
+              break;
+            case 'Diciembre':
+              _mes = 12;
+              break;
+          }
+
+          _str = "csv_files/anio/" + producto + "/bar/bar" + _mes + fcad + ".csv";
+
+          var _width = 500,
+              _height = 200;
+
+          var y = d3.scale.linear()
+              .range([_height, 0]);
+
+          var chart = d3.select(".chart_container").append("svg")
+              .attr("width", _width)
+              .attr("height", _height);
+
+          d3.csv(_str, type, function(error, data) {
+            y.domain([0, d3.max(data, function(d) { return d.suma; })]);
+
+            var barWidth = _width / data.length;
+
+            var bar = chart.selectAll("g")
+                .data(data)
+              .enter().append("g")
+                .attr("transform", function(d, i) { return "translate(" + i * barWidth + ",0)"; });
+
+            bar.append("rect")
+                .attr("y", function(d) { return y(d.suma); })
+                .attr("height", function(d) { return _height - y(d.suma); })
+                .attr("width", barWidth - 1);
+
+            bar.append("text")
+                .attr("x", barWidth / 2)
+                .attr("y", function(d) { return y(d.suma) + 3; })
+                .attr("dy", ".75em")
+                .text(function(d) { return d.distrito; });
+          });
+
+          function type(d) {
+            d.suma = +d.suma; // coerce to number
+            return d;
+          }
+        }
+
+        console.log(str);
+        d3.csv(str, function(error, data) {
+            radviz.render(data);
+            console.log(data[0]);
+            renderList(data[0]);
+        });
+    }
+  });
+
+</script>

@@ -1,0 +1,1067 @@
+{
+	"name":"Ingresos",
+	"children":[
+		{
+			"name": "2009",
+			"children":[
+				{
+					"name": "Sucursal 1",
+					"children":[
+						{
+							"name": "Enero", 
+							"children": [
+								{"name":"Prestamos","size":203486.45},
+								{"name":"Aportes","size":19853.25},
+								{"name":"Ahorros","size":300767.18},
+								{"name":"PlazoFijo","size":61088.56}
+							]
+						},
+						{
+							"name": "Febrero", 
+							"children": [
+								{"name":"Prestamos","size":208417.69},
+								{"name":"Aportes","size":21340.87},
+								{"name":"Ahorros","size":220519.67},
+								{"name":"PlazoFijo","size":150344.74}
+							]
+						},
+						{
+							"name": "Marzo", 
+							"children": [
+								{"name":"Prestamos","size":221525.65},
+								{"name":"Aportes","size":41720.28},
+								{"name":"Ahorros","size":264294},
+								{"name":"PlazoFijo","size":231046.66}
+							]
+						},
+						{
+							"name": "Abril", 
+							"children": [
+								{"name":"Prestamos","size":204443.68},
+								{"name":"Aportes","size":22856.25},
+								{"name":"Ahorros","size":120798.68},
+								{"name":"PlazoFijo","size":232300}
+							]
+						},
+						{
+							"name": "Mayo", 
+							"children": [
+								{"name":"Prestamos","size":181930.63},
+								{"name":"Aportes","size":26189.04},
+								{"name":"Ahorros","size":176663.76},
+								{"name":"PlazoFijo","size":189539.2}
+							]
+						},
+						{
+							"name": "Junio", 
+							"children": [
+								{"name":"Prestamos","size":232875.89},
+								{"name":"Aportes","size":19285.34},
+								{"name":"Ahorros","size":109725.82},
+								{"name":"PlazoFijo","size":235201.47}
+							]
+						},
+						{
+							"name": "Julio", 
+							"children": [
+								{"name":"Prestamos","size":280619.41},
+								{"name":"Aportes","size":30958.93},
+								{"name":"Ahorros","size":232004.84},
+								{"name":"PlazoFijo","size":259770.11}
+							]
+						},
+						{
+							"name": "Agosto", 
+							"children": [
+								{"name":"Prestamos","size":236961.55},
+								{"name":"Aportes","size":29438.41},
+								{"name":"Ahorros","size":188683.16},
+								{"name":"PlazoFijo","size":152593}
+							]
+						},
+						{
+							"name": "Setiembre", 
+							"children": [
+								{"name":"Prestamos","size":238597.59},
+								{"name":"Aportes","size":35029.12},
+								{"name":"Ahorros","size":126396.93},
+								{"name":"PlazoFijo","size":103103}
+							]
+						},
+						{
+							"name": "Octubre", 
+							"children": [
+								{"name":"Prestamos","size":339089.19},
+								{"name":"Aportes","size":22667.61},
+								{"name":"Ahorros","size":195805.45},
+								{"name":"PlazoFijo","size":157981.18}
+							]
+						},
+						{
+							"name": "Noviembre", 
+							"children": [
+								{"name":"Prestamos","size":262259.8},
+								{"name":"Aportes","size":30314.79},
+								{"name":"Ahorros","size":153878.48},
+								{"name":"PlazoFijo","size":206626.66}
+							]
+						},
+						{
+							"name": "Diciembre", 
+							"children": [
+								{"name":"Prestamos","size":320250.16},
+								{"name":"Aportes","size":22953.16},
+								{"name":"Ahorros","size":232743.27},
+								{"name":"PlazoFijo","size":68163}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "2010",
+			"children":[
+				{
+					"name": "Sucursal 1",
+					"children":[
+						{
+							"name": "Enero", 
+							"children": [
+								{"name":"Prestamos","size":344452.83},
+								{"name":"Aportes","size":24645.57},
+								{"name":"Ahorros","size":227618.31},
+								{"name":"PlazoFijo","size":417531.9}
+							]
+						},
+						{
+							"name": "Febrero", 
+							"children": [
+								{"name":"Prestamos","size":304580.58},
+								{"name":"Aportes","size":20171.34},
+								{"name":"Ahorros","size":141976.3},
+								{"name":"PlazoFijo","size":269086.2}
+							]
+						},
+						{
+							"name": "Marzo", 
+							"children": [
+								{"name":"Prestamos","size":429202.98},
+								{"name":"Aportes","size":28687.13},
+								{"name":"Ahorros","size":163557.66},
+								{"name":"PlazoFijo","size":97828.17}
+							]
+						},
+						{
+							"name": "Abril", 
+							"children": [
+								{"name":"Prestamos","size":239211.1},
+								{"name":"Aportes","size":18851.79},
+								{"name":"Ahorros","size":175205.52},
+								{"name":"PlazoFijo","size":303047.46}
+							]
+						},
+						{
+							"name": "Mayo", 
+							"children": [
+								{"name":"Prestamos","size":289888.37},
+								{"name":"Aportes","size":19940.98},
+								{"name":"Ahorros","size":198917.09},
+								{"name":"PlazoFijo","size":471951.53}
+							]
+						},
+						{
+							"name": "Junio", 
+							"children": [
+								{"name":"Prestamos","size":373210.02},
+								{"name":"Aportes","size":18609.52},
+								{"name":"Ahorros","size":248876.77},
+								{"name":"PlazoFijo","size":118748.25}
+							]
+						},
+						{
+							"name": "Julio", 
+							"children": [
+								{"name":"Prestamos","size":245565.13},
+								{"name":"Aportes","size":22527.27},
+								{"name":"Ahorros","size":199342.17},
+								{"name":"PlazoFijo","size":344326.79}
+							]
+						},
+						{
+							"name": "Agosto", 
+							"children": [
+								{"name":"Prestamos","size":242763.87},
+								{"name":"Aportes","size":24762.67},
+								{"name":"Ahorros","size":244589.89},
+								{"name":"PlazoFijo","size":322904.47}
+							]
+						},
+						{
+							"name": "Setiembre", 
+							"children": [
+								{"name":"Prestamos","size":336255.18},
+								{"name":"Aportes","size":41616.63},
+								{"name":"Ahorros","size":200350.74},
+								{"name":"PlazoFijo","size":209886.75}
+							]
+						},
+						{
+							"name": "Octubre", 
+							"children": [
+								{"name":"Prestamos","size":290234.14},
+								{"name":"Aportes","size":52356.9},
+								{"name":"Ahorros","size":204127.52},
+								{"name":"PlazoFijo","size":116385.4}
+							]
+						},
+						{
+							"name": "Noviembre", 
+							"children": [
+								{"name":"Prestamos","size":265690.87},
+								{"name":"Aportes","size":20095.69},
+								{"name":"Ahorros","size":137988.17},
+								{"name":"PlazoFijo","size":142468.23}
+							]
+						},
+						{
+							"name": "Diciembre", 
+							"children": [
+								{"name":"Prestamos","size":507473.9},
+								{"name":"Aportes","size":16944.56},
+								{"name":"Ahorros","size":205677.61},
+								{"name":"PlazoFijo","size":380874.29}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "2011",
+			"children":[
+				{
+					"name": "Sucursal 1",
+					"children":[
+						{
+							"name": "Enero", 
+							"children": [
+								{"name":"Prestamos","size":296670.92},
+								{"name":"Aportes","size":212017.71},
+								{"name":"Ahorros","size":357570.4},
+								{"name":"PlazoFijo","size":585142.34}
+							]
+						},
+						{
+							"name": "Febrero", 
+							"children": [
+								{"name":"Prestamos","size":205434.1},
+								{"name":"Aportes","size":15193.95},
+								{"name":"Ahorros","size":125432.27},
+								{"name":"PlazoFijo","size":233147.51}
+							]
+						},
+						{
+							"name": "Marzo", 
+							"children": [
+								{"name":"Prestamos","size":615869.07},
+								{"name":"Aportes","size":13771.53},
+								{"name":"Ahorros","size":203654.06},
+								{"name":"PlazoFijo","size":149563.05}
+							]
+						},
+						{
+							"name": "Abril", 
+							"children": [
+								{"name":"Prestamos","size":324875.26},
+								{"name":"Aportes","size":11120.73},
+								{"name":"Ahorros","size":126959.02},
+								{"name":"PlazoFijo","size":157450.31}
+							]
+						},
+						{
+							"name": "Mayo", 
+							"children": [
+								{"name":"Prestamos","size":341773.8},
+								{"name":"Aportes","size":21864.79},
+								{"name":"Ahorros","size":179914.65},
+								{"name":"PlazoFijo","size":157050.03}
+							]
+						},
+						{
+							"name": "Junio", 
+							"children": [
+								{"name":"Prestamos","size":354407.51},
+								{"name":"Aportes","size":14401.83},
+								{"name":"Ahorros","size":158814.69},
+								{"name":"PlazoFijo","size":93747}
+							]
+						},
+						{
+							"name": "Julio", 
+							"children": [
+								{"name":"Prestamos","size":256593.94},
+								{"name":"Aportes","size":20986.92},
+								{"name":"Ahorros","size":141864.45},
+								{"name":"PlazoFijo","size":110226.81}
+							]
+						},
+						{
+							"name": "Agosto", 
+							"children": [
+								{"name":"Prestamos","size":392697.31},
+								{"name":"Aportes","size":14779.63},
+								{"name":"Ahorros","size":132301.83},
+								{"name":"PlazoFijo","size":77410.06}
+							]
+						},
+						{
+							"name": "Setiembre", 
+							"children": [
+								{"name":"Prestamos","size":314196.55},
+								{"name":"Aportes","size":24765.55},
+								{"name":"Ahorros","size":119851.28},
+								{"name":"PlazoFijo","size":192472.21}
+							]
+						},
+						{
+							"name": "Octubre", 
+							"children": [
+								{"name":"Prestamos","size":252032.09},
+								{"name":"Aportes","size":36557.56},
+								{"name":"Ahorros","size":168364.21},
+								{"name":"PlazoFijo","size":228520.92}
+							]
+						},
+						{
+							"name": "Noviembre", 
+							"children": [
+								{"name":"Prestamos","size":230382.91},
+								{"name":"Aportes","size":30103.22},
+								{"name":"Ahorros","size":173960.39},
+								{"name":"PlazoFijo","size":159239.69}
+							]
+						},
+						{
+							"name": "Diciembre", 
+							"children": [
+								{"name":"Prestamos","size":405472.66},
+								{"name":"Aportes","size":370713.1},
+								{"name":"Ahorros","size":233899.72},
+								{"name":"PlazoFijo","size":285722.69}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "2012",
+			"children":[
+				{
+					"name": "Sucursal 1",
+					"children":[
+						{
+							"name": "Enero", 
+							"children": [
+								{"name":"Prestamos","size":218234.92},
+								{"name":"Aportes","size":16377.15},
+								{"name":"Ahorros","size":185381.12},
+								{"name":"PlazoFijo","size":248131.64}
+							]
+						},
+						{
+							"name": "Febrero", 
+							"children": [
+								{"name":"Prestamos","size":221761.94},
+								{"name":"Aportes","size":14582.35},
+								{"name":"Ahorros","size":135015.2},
+								{"name":"PlazoFijo","size":349047.2}
+							]
+						},
+						{
+							"name": "Marzo", 
+							"children": [
+								{"name":"Prestamos","size":220661.28},
+								{"name":"Aportes","size":12512.42},
+								{"name":"Ahorros","size":189473.69},
+								{"name":"PlazoFijo","size":220100.27}
+							]
+						},
+						{
+							"name": "Abril", 
+							"children": [
+								{"name":"Prestamos","size":272943.5},
+								{"name":"Aportes","size":13633.7},
+								{"name":"Ahorros","size":131414.52},
+								{"name":"PlazoFijo","size":160480.22}
+							]
+						},
+						{
+							"name": "Mayo", 
+							"children": [
+								{"name":"Prestamos","size":205876.98},
+								{"name":"Aportes","size":20997.55},
+								{"name":"Ahorros","size":171510.52},
+								{"name":"PlazoFijo","size":179152.15}
+							]
+						},
+						{
+							"name": "Junio", 
+							"children": [
+								{"name":"Prestamos","size":226118.81},
+								{"name":"Aportes","size":16242.97},
+								{"name":"Ahorros","size":221383.56},
+								{"name":"PlazoFijo","size":269512.5}
+							]
+						},
+						{
+							"name": "Julio", 
+							"children": [
+								{"name":"Prestamos","size":201213.49},
+								{"name":"Aportes","size":19712.47},
+								{"name":"Ahorros","size":168266.65},
+								{"name":"PlazoFijo","size":144812.85}
+							]
+						},
+						{
+							"name": "Agosto", 
+							"children": [
+								{"name":"Prestamos","size":191714.31},
+								{"name":"Aportes","size":15664.69},
+								{"name":"Ahorros","size":215758.55},
+								{"name":"PlazoFijo","size":260306.12}
+							]
+						},
+						{
+							"name": "Setiembre", 
+							"children": [
+								{"name":"Prestamos","size":262341.29},
+								{"name":"Aportes","size":16565.26},
+								{"name":"Ahorros","size":172554.44},
+								{"name":"PlazoFijo","size":165762.41}
+							]
+						},
+						{
+							"name": "Octubre", 
+							"children": [
+								{"name":"Prestamos","size":220147.32},
+								{"name":"Aportes","size":24112.44},
+								{"name":"Ahorros","size":164048.94},
+								{"name":"PlazoFijo","size":347819.89}
+							]
+						},
+						{
+							"name": "Noviembre", 
+							"children": [
+								{"name":"Prestamos","size":203555.95},
+								{"name":"Aportes","size":20930.74},
+								{"name":"Ahorros","size":121122.72},
+								{"name":"PlazoFijo","size":62752.78}
+							]
+						},
+						{
+							"name": "Diciembre", 
+							"children": [
+								{"name":"Prestamos","size":366262.41},
+								{"name":"Aportes","size":24408.57},
+								{"name":"Ahorros","size":211540.48},
+								{"name":"PlazoFijo","size":151821.25}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "2013",
+			"children":[
+				{
+					"name": "Sucursal 1",
+					"children":[
+						{
+							"name": "Enero", 
+							"children": [
+								{"name":"Prestamos","size":239043.67},
+								{"name":"Aportes","size":21917.51},
+								{"name":"Ahorros","size":200307.77},
+								{"name":"PlazoFijo","size":170163.74}
+							]
+						},
+						{
+							"name": "Febrero", 
+							"children": [
+								{"name":"Prestamos","size":220150.17},
+								{"name":"Aportes","size":11599.9},
+								{"name":"Ahorros","size":116652.21},
+								{"name":"PlazoFijo","size":187437.49}
+							]
+						},
+						{
+							"name": "Marzo", 
+							"children": [
+								{"name":"Prestamos","size":285180.81},
+								{"name":"Aportes","size":15686.11},
+								{"name":"Ahorros","size":129317},
+								{"name":"PlazoFijo","size":256549.48}
+							]
+						},
+						{
+							"name": "Abril", 
+							"children": [
+								{"name":"Prestamos","size":226766.05},
+								{"name":"Aportes","size":16214.38},
+								{"name":"Ahorros","size":201011.08},
+								{"name":"PlazoFijo","size":719575.08}
+							]
+						},
+						{
+							"name": "Mayo", 
+							"children": [
+								{"name":"Prestamos","size":224436.83},
+								{"name":"Aportes","size":21931.94},
+								{"name":"Ahorros","size":160501.34},
+								{"name":"PlazoFijo","size":267122.99}
+							]
+						},
+						{
+							"name": "Junio", 
+							"children": [
+								{"name":"Prestamos","size":182041.71},
+								{"name":"Aportes","size":11310.14},
+								{"name":"Ahorros","size":163576.04},
+								{"name":"PlazoFijo","size":278939.93}
+							]
+						},
+						{
+							"name": "Julio", 
+							"children": [
+								{"name":"Prestamos","size":253840.61},
+								{"name":"Aportes","size":20180.72},
+								{"name":"Ahorros","size":165577.96},
+								{"name":"PlazoFijo","size":385670.32}
+							]
+						},
+						{
+							"name": "Agosto", 
+							"children": [
+								{"name":"Prestamos","size":232849.61},
+								{"name":"Aportes","size":22447.9},
+								{"name":"Ahorros","size":155246.64},
+								{"name":"PlazoFijo","size":363153.16}
+							]
+						},
+						{
+							"name": "Setiembre", 
+							"children": [
+								{"name":"Prestamos","size":394271.1},
+								{"name":"Aportes","size":32359.46},
+								{"name":"Ahorros","size":228048.05},
+								{"name":"PlazoFijo","size":388658.2}
+							]
+						},
+						{
+							"name": "Octubre", 
+							"children": [
+								{"name":"Prestamos","size":242819.18},
+								{"name":"Aportes","size":17841.24},
+								{"name":"Ahorros","size":231012.04},
+								{"name":"PlazoFijo","size":416691.43}
+							]
+						},
+						{
+							"name": "Noviembre", 
+							"children": [
+								{"name":"Prestamos","size":212078.59},
+								{"name":"Aportes","size":17621.95},
+								{"name":"Ahorros","size":148727.51},
+								{"name":"PlazoFijo","size":203884.4}
+							]
+						},
+						{
+							"name": "Diciembre", 
+							"children": [
+								{"name":"Prestamos","size":248601.28},
+								{"name":"Aportes","size":21716.57},
+								{"name":"Ahorros","size":193544.19},
+								{"name":"PlazoFijo","size":	261720.06}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "2014",
+			"children":[
+				{
+					"name": "Sucursal 1",
+					"children":[
+						{
+							"name": "Enero", 
+							"children": [
+								{"name":"Prestamos","size":192657.16},
+								{"name":"Aportes","size":18780.54},
+								{"name":"Ahorros","size":211661.68},
+								{"name":"PlazoFijo","size":139514.68}
+							]
+						},
+						{
+							"name": "Febrero", 
+							"children": [
+								{"name":"Prestamos","size":357971.63},
+								{"name":"Aportes","size":41413.31},
+								{"name":"Ahorros","size":149099.02},
+								{"name":"PlazoFijo","size":166463.09}
+							]
+						},
+						{
+							"name": "Marzo", 
+							"children": [
+								{"name":"Prestamos","size":279001.68},
+								{"name":"Aportes","size":23640.82},
+								{"name":"Ahorros","size":240347.27},
+								{"name":"PlazoFijo","size":147897.16}
+							]
+						},
+						{
+							"name": "Abril", 
+							"children": [
+								{"name":"Prestamos","size":288333.07},
+								{"name":"Aportes","size":20991.37},
+								{"name":"Ahorros","size":133426.9},
+								{"name":"PlazoFijo","size":155000}
+							]
+						},
+						{
+							"name": "Mayo", 
+							"children": [
+								{"name":"Prestamos","size":312752.8},
+								{"name":"Aportes","size":25856.41},
+								{"name":"Ahorros","size":131966.65},
+								{"name":"PlazoFijo","size":322839.94}
+							]
+						},
+						{
+							"name": "Junio", 
+							"children": [
+								{"name":"Prestamos","size":370815.72},
+								{"name":"Aportes","size":24398.49},
+								{"name":"Ahorros","size":166044.15},
+								{"name":"PlazoFijo","size":307866.83}
+							]
+						},
+						{
+							"name": "Julio", 
+							"children": [
+								{"name":"Prestamos","size":379736.74},
+								{"name":"Aportes","size":26447.49},
+								{"name":"Ahorros","size":278339.31},
+								{"name":"PlazoFijo","size":178612.66}
+							]
+						},
+						{
+							"name": "Agosto", 
+							"children": [
+								{"name":"Prestamos","size":317285.43},
+								{"name":"Aportes","size":33259.68},
+								{"name":"Ahorros","size":211278.82},
+								{"name":"PlazoFijo","size":208742.73}
+							]
+						},
+						{
+							"name": "Setiembre", 
+							"children": [
+								{"name":"Prestamos","size":405153.77},
+								{"name":"Aportes","size":22009.37},
+								{"name":"Ahorros","size":225994.19},
+								{"name":"PlazoFijo","size":313753.04}
+							]
+						},
+						{
+							"name": "Octubre", 
+							"children": [
+								{"name":"Prestamos","size":256359.43},
+								{"name":"Aportes","size":56456.17},
+								{"name":"Ahorros","size":202173.1},
+								{"name":"PlazoFijo","size":332529.06}
+							]
+						},
+						{
+							"name": "Noviembre", 
+							"children": [
+								{"name":"Prestamos","size":379149.5},
+								{"name":"Aportes","size":30630.46},
+								{"name":"Ahorros","size":150212.8},
+								{"name":"PlazoFijo","size":258300.72}
+							]
+						},
+						{
+							"name": "Diciembre", 
+							"children": [
+								{"name":"Prestamos","size":491851.9},
+								{"name":"Aportes","size":19137.46},
+								{"name":"Ahorros","size":190100.25},
+								{"name":"PlazoFijo","size":169280.66}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "2015",
+			"children":[
+				{
+					"name": "Sucursal 1",
+					"children":[
+						{
+							"name": "Enero", 
+							"children": [
+								{"name":"Prestamos","size":309240.98},
+								{"name":"Aportes","size":29422.71},
+								{"name":"Ahorros","size":272554.77},
+								{"name":"PlazoFijo","size":332014.61}
+							]
+						},
+						{
+							"name": "Febrero", 
+							"children": [
+								{"name":"Prestamos","size":296473.99},
+								{"name":"Aportes","size":17301.55},
+								{"name":"Ahorros","size":242371.96},
+								{"name":"PlazoFijo","size":142638.31}
+							]
+						},
+						{
+							"name": "Marzo", 
+							"children": [
+								{"name":"Prestamos","size":367104.27},
+								{"name":"Aportes","size":23423.41},
+								{"name":"Ahorros","size":835692.53},
+								{"name":"PlazoFijo","size":243233.79}
+							]
+						},
+						{
+							"name": "Abril", 
+							"children": [
+								{"name":"Prestamos","size":273457.68},
+								{"name":"Aportes","size":17821.24},
+								{"name":"Ahorros","size":759449.37},
+								{"name":"PlazoFijo","size":134447.06}
+							]
+						},
+						{
+							"name": "Mayo", 
+							"children": [
+								{"name":"Prestamos","size":432124.58},
+								{"name":"Aportes","size":23217.2},
+								{"name":"Ahorros","size":552360.95},
+								{"name":"PlazoFijo","size":356504.95}
+							]
+						},
+						{
+							"name": "Junio", 
+							"children": [
+								{"name":"Prestamos","size":404899.14},
+								{"name":"Aportes","size":29763.48},
+								{"name":"Ahorros","size":284679.17},
+								{"name":"PlazoFijo","size":282607.53}
+							]
+						},
+						{
+							"name": "Julio", 
+							"children": [
+								{"name":"Prestamos","size":385917.48},
+								{"name":"Aportes","size":16967.14},
+								{"name":"Ahorros","size":397347.62},
+								{"name":"PlazoFijo","size":230260.37}
+							]
+						},
+						{
+							"name": "Agosto", 
+							"children": [
+								{"name":"Prestamos","size":339621.43},
+								{"name":"Aportes","size":31933.27},
+								{"name":"Ahorros","size":321619},
+								{"name":"PlazoFijo","size":166647.37}
+							]
+						},
+						{
+							"name": "Setiembre", 
+							"children": [
+								{"name":"Prestamos","size":533162},
+								{"name":"Aportes","size":40061.4},
+								{"name":"Ahorros","size":451126.04},
+								{"name":"PlazoFijo","size":501957.36}
+							]
+						},
+						{
+							"name": "Octubre", 
+							"children": [
+								{"name":"Prestamos","size":453022.78},
+								{"name":"Aportes","size":49529.87},
+								{"name":"Ahorros","size":393665.88},
+								{"name":"PlazoFijo","size":315203.52}
+							]
+						},
+						{
+							"name": "Noviembre", 
+							"children": [
+								{"name":"Prestamos","size":300355.58},
+								{"name":"Aportes","size":33503.88},
+								{"name":"Ahorros","size":362325.92},
+								{"name":"PlazoFijo","size":450897.62}
+							]
+						},
+						{
+							"name": "Diciembre", 
+							"children": [
+								{"name":"Prestamos","size":380967.81},
+								{"name":"Aportes","size":1382558.73},
+								{"name":"Ahorros","size":266001.38},
+								{"name":"PlazoFijo","size":321693.74}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "2016",
+			"children":[
+				{
+					"name": "Sucursal 1",
+					"children":[
+						{
+							"name": "Enero", 
+							"children": [
+								{"name":"Prestamos","size":306661.62},
+								{"name":"Aportes","size":37334.43},
+								{"name":"Ahorros","size":205483.94},
+								{"name":"PlazoFijo","size":342234.07}
+							]
+						},
+						{
+							"name": "Febrero", 
+							"children": [
+								{"name":"Prestamos","size":482516.66},
+								{"name":"Aportes","size":22950.24},
+								{"name":"Ahorros","size":143603.91},
+								{"name":"PlazoFijo","size":363147.87}
+							]
+						},
+						{
+							"name": "Marzo", 
+							"children": [
+								{"name":"Prestamos","size":406603.95},
+								{"name":"Aportes","size":45445.36},
+								{"name":"Ahorros","size":183315.7},
+								{"name":"PlazoFijo","size":577185.6}
+							]
+						},
+						{
+							"name": "Abril", 
+							"children": [
+								{"name":"Prestamos","size":348454.75},
+								{"name":"Aportes","size":39917.61},
+								{"name":"Ahorros","size":247585.33},
+								{"name":"PlazoFijo","size":396724.48}
+							]
+						},
+						{
+							"name": "Mayo", 
+							"children": [
+								{"name":"Prestamos","size":416031.37},
+								{"name":"Aportes","size":26539.87},
+								{"name":"Ahorros","size":647464.8},
+								{"name":"PlazoFijo","size":539095.5}
+							]
+						},
+						{
+							"name": "Junio", 
+							"children": [
+								{"name":"Prestamos","size":252600.47},
+								{"name":"Aportes","size":19396.87},
+								{"name":"Ahorros","size":133837.58},
+								{"name":"PlazoFijo","size":165603.4}
+							]
+						},
+						{
+							"name": "Julio", 
+							"children": [
+								{"name":"Prestamos","size":292621.34},
+								{"name":"Aportes","size":14359.61},
+								{"name":"Ahorros","size":153370.69},
+								{"name":"PlazoFijo","size":494556.25}
+							]
+						},
+						{
+							"name": "Agosto", 
+							"children": [
+								{"name":"Prestamos","size":221354.88},
+								{"name":"Aportes","size":16974.65},
+								{"name":"Ahorros","size":232248.23},
+								{"name":"PlazoFijo","size":332066.02}
+							]
+						},
+						{
+							"name": "Setiembre", 
+							"children": [
+								{"name":"Prestamos","size":263165.94},
+								{"name":"Aportes","size":12645.6},
+								{"name":"Ahorros","size":156193.62},
+								{"name":"PlazoFijo","size":197603.51}
+							]
+						},
+						{
+							"name": "Octubre", 
+							"children": [
+								{"name":"Prestamos","size":233527.68},
+								{"name":"Aportes","size":49413.6},
+								{"name":"Ahorros","size":144495.02},
+								{"name":"PlazoFijo","size":360815.83}
+							]
+						},
+						{
+							"name": "Noviembre", 
+							"children": [
+								{"name":"Prestamos","size":497120.5},
+								{"name":"Aportes","size":26295.36},
+								{"name":"Ahorros","size":235077.22},
+								{"name":"PlazoFijo","size":118973.71}
+							]
+						},
+						{
+							"name": "Diciembre", 
+							"children": [
+								{"name":"Prestamos","size":707129.67},
+								{"name":"Aportes","size":89331.71},
+								{"name":"Ahorros","size":366111.09},
+								{"name":"PlazoFijo","size":224775.08}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "2017",
+			"children":[
+				{
+					"name": "Sucursal 1",
+					"children":[
+						{
+							"name": "Enero", 
+							"children": [
+								{"name":"Prestamos","size":84147.99},
+								{"name":"Aportes","size":30734.9},
+								{"name":"Ahorros","size":150148.47},
+								{"name":"PlazoFijo","size":224775.08}
+							]
+						},
+						{
+							"name": "Febrero", 
+							"children": [
+								{"name":"Prestamos","size":0},
+								{"name":"Aportes","size":0},
+								{"name":"Ahorros","size":0},
+								{"name":"PlazoFijo","size":0}
+							]
+						},
+						{
+							"name": "Marzo", 
+							"children": [
+								{"name":"Prestamos","size":0},
+								{"name":"Aportes","size":0},
+								{"name":"Ahorros","size":0},
+								{"name":"PlazoFijo","size":0}
+							]
+						},
+						{
+							"name": "Abril", 
+							"children": [
+								{"name":"Prestamos","size":0},
+								{"name":"Aportes","size":0},
+								{"name":"Ahorros","size":0},
+								{"name":"PlazoFijo","size":0}
+							]
+						},
+						{
+							"name": "Mayo", 
+							"children": [
+								{"name":"Prestamos","size":0},
+								{"name":"Aportes","size":0},
+								{"name":"Ahorros","size":0},
+								{"name":"PlazoFijo","size":0}
+							]
+						},
+						{
+							"name": "Junio", 
+							"children": [
+								{"name":"Prestamos","size":0},
+								{"name":"Aportes","size":0},
+								{"name":"Ahorros","size":0},
+								{"name":"PlazoFijo","size":0}
+							]
+						},
+						{
+							"name": "Julio", 
+							"children": [
+								{"name":"Prestamos","size":0},
+								{"name":"Aportes","size":0},
+								{"name":"Ahorros","size":0},
+								{"name":"PlazoFijo","size":0}
+							]
+						},
+						{
+							"name": "Agosto", 
+							"children": [
+								{"name":"Prestamos","size":0},
+								{"name":"Aportes","size":0},
+								{"name":"Ahorros","size":0},
+								{"name":"PlazoFijo","size":0}
+							]
+						},
+						{
+							"name": "Setiembre", 
+							"children": [
+								{"name":"Prestamos","size":0},
+								{"name":"Aportes","size":0},
+								{"name":"Ahorros","size":0},
+								{"name":"PlazoFijo","size":0}
+							]
+						},
+						{
+							"name": "Octubre", 
+							"children": [
+								{"name":"Prestamos","size":0},
+								{"name":"Aportes","size":0},
+								{"name":"Ahorros","size":0},
+								{"name":"PlazoFijo","size":0}
+							]
+						},
+						{
+							"name": "Noviembre", 
+							"children": [
+								{"name":"Prestamos","size":0},
+								{"name":"Aportes","size":0},
+								{"name":"Ahorros","size":0},
+								{"name":"PlazoFijo","size":0}
+							]
+						},
+						{
+							"name": "Diciembre", 
+							"children": [
+								{"name":"Prestamos","size":0},
+								{"name":"Aportes","size":0},
+								{"name":"Ahorros","size":0},
+								{"name":"PlazoFijo","size":0}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
